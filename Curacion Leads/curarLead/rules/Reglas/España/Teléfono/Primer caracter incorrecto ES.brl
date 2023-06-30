@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Primer caracter incorrecto ES</name>
+  <uuid>dec7b817-8937-4d2a-8b68-9cebeecb4f00</uuid>
+  <locale>es_ES</locale>
+  <definition><![CDATA[si
+	el Teléfono de 'el lead' no empieza por "6" y el Teléfono de 'el lead' no empieza por "7" y
+    el Teléfono de 'el lead' no empieza por "8" y el Teléfono de 'el lead' no empieza por "9"
+entonces
+	asignar a 'los datos son válidos' falso ;
+    agregar "El primer carácter de el teléfono no es correcto" en los Errores de 'el lead'; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

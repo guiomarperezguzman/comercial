@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Teléfono</name>
+  <uuid>62c05f67-f0e6-415b-ba81-8f97d43f8f3c</uuid>
+</ilog.rules.studio.model.base:RulePackage>

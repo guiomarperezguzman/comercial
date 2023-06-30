@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>FlujoPrincipal</name>
+  <uuid>495d2147-b5f1-43cd-b29e-04a0c3ee9668</uuid>
+  <locale>es_ES</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Package Name="Reglas.Validacion inicial"/>
+                    <Rule Uuid="1dc18e74-3ed6-461e-a051-a9ef597da60e"/>
+                    <Rule Uuid="a8bafcfb-3e0b-4140-8f80-6f2f20e6315a"/>
+                    <Rule Uuid="e89d1d60-0190-4df0-9937-193d4b2b027e"/>
+                    <Rule Uuid="f53e54a1-da9b-4275-a6e2-65b40d26f193"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_4" Ordering="Default">
+                <RuleList>
+                    <Package Name="Reglas.Portugal"/>
+                    <Package Name="Reglas.Portugal.Teléfono"/>
+                    <Rule Uuid="5baf2329-d85f-48bd-bdb2-e246d88e21af"/>
+                </RuleList>
+            </RuleTask>
+            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="task_3" Ordering="Default">
+                <Select Dynamic="false" Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "España" ]]></Select>
+                <RuleList>
+                    <Package Name="Reglas.España"/>
+                    <Package Name="Reglas.España.Teléfono"/>
+                    <Rule Uuid="3ba96bf0-51ca-414e-bf66-e3c93d7fa8bf"/>
+                    <Rule Uuid="dec7b817-8937-4d2a-8b68-9cebeecb4f00"/>
+                </RuleList>
+            </RuleTask>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <BranchNode Identifier="node_4"/>
+            <TaskNode Identifier="node_6" Task="task_4"/>
+            <TaskNode Identifier="node_5" Task="task_3"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+            <Transition Identifier="transition_3" Source="node_1" Target="node_4"/>
+            <Transition Identifier="transition_7" Source="node_4" Target="node_6">
+                <Conditions Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "Portugal" ]]></Conditions>
+            </Transition>
+            <Transition Identifier="transition_6" Source="node_6" Target="node_2"/>
+            <Transition Identifier="transition_4" Source="node_5" Target="node_2"/>
+            <Transition Identifier="transition_8" Source="node_4" Target="node_5">
+                <Conditions Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "España" ]]></Conditions>
+            </Transition>
+            <Transition Identifier="transition_5" Source="node_4" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="es_ES">
+            <Data Name="node_6#name"><![CDATA[Portugal]]></Data>
+            <Data Name="node_0#name"><![CDATA[Nodo inicial]]></Data>
+            <Data Name="node_4#label"><![CDATA[Datos Validdos]]></Data>
+            <Data Name="node_5#name"><![CDATA[España]]></Data>
+            <Data Name="node_1#name"><![CDATA[Validacion inicial]]></Data>
+            <Data Name="node_2#name"><![CDATA[Nodo final]]></Data>
+            <Data Name="node_5#label"><![CDATA[España]]></Data>
+            <Data Name="node_4#name"><![CDATA[Datos Validdos]]></Data>
+            <Data Name="node_1#label"><![CDATA[Validacion inicial]]></Data>
+            <Data Name="node_6#label"><![CDATA[Portugal]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

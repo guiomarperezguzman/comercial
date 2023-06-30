@@ -1,0 +1,31 @@
+
+# Term: Lead
+@Lead#gender = MALE
+@Lead#plural = Leads
+
+# guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead#concept.label = Lead
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.Lead(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = un nuevo {Lead} en que {0, Apellidos} {1, Ciudad} {2, Código Postal} {3, Dirección} {4, Error} {5, Nombre} {6, País} {7, Provincia} {8, Teléfono} {9, Tratamiento}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.addTo_error(java.lang.String)#phrase.action = agregar {0} en los Errores {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.apellidos#phrase.action = cambiar el Apellidos {this,PARTITIVE_ARTICLE} a {Apellidos}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.apellidos#phrase.navigation = {Apellidos} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.ciudad#phrase.action = cambiar la Ciudad {this,PARTITIVE_ARTICLE} a {Ciudad}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.ciudad#phrase.navigation = {Ciudad} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.clear_error()#phrase.action = vaciar los Errores {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.códigoPostal#phrase.action = cambiar el Código Postal {this,PARTITIVE_ARTICLE} a {Código Postal}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.códigoPostal#phrase.navigation = {Código Postal} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.dirección#phrase.action = cambiar la Dirección {this,PARTITIVE_ARTICLE} a {Dirección}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.dirección#phrase.navigation = {Dirección} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.error#phrase.action = cambiar el Error {this,PARTITIVE_ARTICLE} a {Error}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.error#phrase.navigation = {Error} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.nombre#phrase.action = cambiar el Nombre {this,PARTITIVE_ARTICLE} a {Nombre}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.nombre#phrase.navigation = {Nombre} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.país#phrase.action = cambiar el País {this,PARTITIVE_ARTICLE} a {País}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.país#phrase.navigation = {País} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.provincia#phrase.action = cambiar la Provincia {this,PARTITIVE_ARTICLE} a {Provincia}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.provincia#phrase.navigation = {Provincia} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.removeFrom_error(java.lang.String)#phrase.action = quitar {0} de los Errores {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.teléfono#phrase.action = cambiar el Teléfono {this,PARTITIVE_ARTICLE} a {Teléfono}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.teléfono#phrase.navigation = {Teléfono} {this,PARTITIVE_ARTICLE}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.action = cambiar el Tratamiento {this,PARTITIVE_ARTICLE} a {Tratamiento}
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.navigation = {Tratamiento} {this,PARTITIVE_ARTICLE}

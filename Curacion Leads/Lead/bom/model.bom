@@ -1,0 +1,79 @@
+
+package guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead;
+
+
+public class Lead
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Lead"
+        property "de.generated" "true"
+{
+    public string apellidos
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Apellidos"
+                property update "true";
+    public string ciudad
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Ciudad"
+                property update "true";
+    public string códigoPostal
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CódigoPostal"
+                property update "true";
+    public string dirección
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Dirección"
+                property update "true";
+    public java.util.List error domain 0,* class string
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Error"
+                property update "true";
+    public string nombre
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Nombre"
+                property update "true";
+    public string país
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "País"
+                property update "true";
+    public string provincia
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Provincia"
+                property update "true";
+    public string teléfono
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Teléfono"
+                property update "true";
+    public string tratamiento
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Tratamiento"
+                property update "true";
+    public Lead(string apellidos, 
+        string ciudad, 
+        string códigoPostal, 
+        string dirección, 
+        java.util.List error domain 0,* class string, 
+        string nombre, 
+        string país, 
+        string provincia, 
+        string teléfono, 
+        string tratamiento)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Lead()
+                property "dataio.default" "true";
+    public void addTo_error(string error)
+                property collectionAttribute "error"
+                property update "true";
+    public void clear_error()
+                property collectionAttribute "error"
+                property update "true";
+    public void removeFrom_error(string error)
+                property collectionAttribute "error"
+                property update "true";
+    public void set_error(java.util.Collection error domain 0,* class string)
+                property collectionAttribute "error"
+                property update "true";
+}
+

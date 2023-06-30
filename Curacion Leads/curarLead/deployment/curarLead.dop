@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="curarLead" usingRuleflow="true" ruleflowName="FlujoPrincipal" targetRuleProjectName="curarLead">
+  <name>curarLead</name>
+  <uuid>20bd52ea-5611-4aa5-8335-207130f196e1</uuid>
+  <description><![CDATA[Servicio para curar los datos de un lead]]></description>
+  <referencedVariables variableName="Lead" variableSetName="Datos" direction="IN_OUT">
+    <variableSet href="../rules/Datos.var#fa8aca43-1231-48a1-90e6-4f4a92c2a183"/>
+  </referencedVariables>
+  <ruleflow href="../rules/FlujoPrincipal.rfl#495d2147-b5f1-43cd-b29e-04a0c3ee9668"/>
+  <targetRuleProject href="../../curarLead#f54d07b0-2b82-4610-a9e3-ac27d39b4863"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

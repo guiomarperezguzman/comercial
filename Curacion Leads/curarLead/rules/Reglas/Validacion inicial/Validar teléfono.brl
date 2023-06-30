@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Validar teléfono</name>
+  <uuid>e89d1d60-0190-4df0-9937-193d4b2b027e</uuid>
+  <locale>es_ES</locale>
+  <definition><![CDATA[si el Teléfono de 'el lead' es nulo o el Teléfono de 'el lead' es vacío 
+entonces
+	asignar a 'los datos son válidos' falso ;
+    agregar "El teléfono no está relleno" en los Errores de 'el lead'; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
