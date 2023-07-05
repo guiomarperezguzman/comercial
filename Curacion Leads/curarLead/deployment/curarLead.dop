@@ -8,4 +8,13 @@
   </referencedVariables>
   <ruleflow href="../rules/FlujoPrincipal.rfl#495d2147-b5f1-43cd-b29e-04a0c3ee9668"/>
   <targetRuleProject href="../../curarLead#f54d07b0-2b82-4610-a9e3-ac27d39b4863"/>
+  <tags key="operationDescription">
+    <value><![CDATA["validar y curar un lead"]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["curarLead-curarLead"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
