@@ -77,6 +77,18 @@ public class Lead
                 property update "true";
 }
 
+public class NewEnum
+        extends java.lang.Enum
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "newEnum"
+        property "de.generated" "true"
+{
+    domain {static newEnumValue}
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum newEnumValue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "newEnumValue";
+}
+
 public class Pais
         extends java.lang.Enum
         property "ads.typeId" "2"
@@ -93,5 +105,20 @@ public class Pais
     public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais portugal
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Portugal";
+}
+
+public class Provincia
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Provincia"
+        property "de.generated" "true"
+{
+    domain {static newEnumValue, static álava}
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia newEnumValue
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "newEnumValue";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia álava
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Álava";
 }
 

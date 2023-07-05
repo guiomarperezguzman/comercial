@@ -33,9 +33,19 @@ guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.teléfono#phrase.na
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.action = cambiar el Tratamiento {this,PARTITIVE_ARTICLE} a {Tratamiento}
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.navigation = {Tratamiento} {this,PARTITIVE_ARTICLE}
 
+# guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum#concept.label = new enum
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum.newEnumValue#instance.label = new enum value
+
 # guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais#concept.documentation = 
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais#concept.label = Pais
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais.españa#instance.label = España
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais.ninguno#instance.label = Ninguno
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais.portugal#instance.label = Portugal
+
+# guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia#concept.documentation = 
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia#concept.label = Provincia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.newEnumValue#instance.label = new enum value
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.álava#instance.label = Álava
