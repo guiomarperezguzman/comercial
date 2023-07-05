@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Validaciones iniciales</name>
+  <uuid>b8784e7e-5147-4c3c-b3ad-81e8859ef365</uuid>
+  <locale>es_ES</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="f53e54a1-da9b-4275-a6e2-65b40d26f193"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_3" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="6f13cbb8-32ba-460b-918a-ed2da75c668b"/>
+                    <Rule Uuid="1dc18e74-3ed6-461e-a051-a9ef597da60e"/>
+                    <Rule Uuid="a8bafcfb-3e0b-4140-8f80-6f2f20e6315a"/>
+                    <Rule Uuid="e89d1d60-0190-4df0-9937-193d4b2b027e"/>
+                </RuleList>
+            </RuleTask>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <TaskNode Identifier="node_3" Task="task_3"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+            <Transition Identifier="transition_2" Source="node_1" Target="node_3"/>
+            <Transition Identifier="transition_3" Source="node_3" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="es_ES">
+            <Data Name="node_3#label"><![CDATA[Validaciones]]></Data>
+            <Data Name="node_0#name"><![CDATA[Nodo inicial]]></Data>
+            <Data Name="node_1#name"><![CDATA[Calcular país]]></Data>
+            <Data Name="node_2#name"><![CDATA[Nodo final]]></Data>
+            <Data Name="node_1#label"><![CDATA[Calcular país]]></Data>
+            <Data Name="node_3#name"><![CDATA[Validaciones]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

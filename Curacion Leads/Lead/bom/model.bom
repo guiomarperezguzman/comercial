@@ -77,3 +77,21 @@ public class Lead
                 property update "true";
 }
 
+public class Pais
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Pais"
+        property "de.generated" "true"
+{
+    domain {static españa, static ninguno, static portugal}
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais españa
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "España";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais ninguno
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Ninguno";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais portugal
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Portugal";
+}
+

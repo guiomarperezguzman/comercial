@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
-  <name>Validar País</name>
-  <uuid>6f13cbb8-32ba-460b-918a-ed2da75c668b</uuid>
+  <name>Calcular País</name>
+  <uuid>f53e54a1-da9b-4275-a6e2-65b40d26f193</uuid>
   <locale>es_ES</locale>
   <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
     <Body>
@@ -24,19 +24,15 @@
         <Structure>
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
-                    <Properties>
-                        <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[true]]></Property>
-                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[true]]></Property>
-                    </Properties>
                     <ExpressionDefinition>
-                        <Text><![CDATA['el país' es <un Pais> ]]></Text>
+                        <Text><![CDATA[el País de 'el lead' está en <unas cadenas de caracteres> ]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
-                <ActionDefinition Id="A2">
+                <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[agregar <una cadena de caracteres> en los Errores de 'el lead']]></Text>
+                        <Text><![CDATA[asignar a 'el país' <un Pais> ]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -45,32 +41,24 @@
             <Partition DefId="C0">
                 <Condition>
                     <Expression>
-                        <Param><![CDATA[España]]></Param>
+                        <Param><![CDATA[{ "España", "Spain", "ES", "Espana" }]]></Param>
                     </Expression>
                     <ActionSet>
-                        <Action DefId="A2" Enabled="false">
-                            <Expression/>
-                        </Action>
-                    </ActionSet>
-                </Condition>
-                <Condition>
-                    <Expression>
-                        <Param><![CDATA[Portugal]]></Param>
-                    </Expression>
-                    <ActionSet>
-                        <Action DefId="A2" Enabled="false">
-                            <Expression/>
-                        </Action>
-                    </ActionSet>
-                </Condition>
-                <Condition>
-                    <Expression>
-                        <Param><![CDATA[Ninguno]]></Param>
-                    </Expression>
-                    <ActionSet>
-                        <Action DefId="A2">
+                        <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA["País no válido"]]></Param>
+                                <Param><![CDATA[España]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA[{ "Portugal", "PT", "Port" }]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[Portugal]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>
@@ -81,8 +69,9 @@
     <Resources DefaultLocale="es_ES">
         <ResourceSet Locale="es_ES">
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[País]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[una cadena de caracteres]]></Data>
             <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[un booleano]]></Data>
-            <Data Name="Definitions(A2)#HeaderText"><![CDATA[Error]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[País Salida]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[273]]></Data>
         </ResourceSet>
     </Resources>

@@ -38,10 +38,10 @@
                     <Partition DefId="C1">
                         <Condition>
                             <Expression>
-                                <Param><![CDATA[{ "Araba", "Álava" }]]></Param>
+                                <Param><![CDATA[{ "Álava" }]]></Param>
                             </Expression>
                             <ActionSet>
-                                <Action DefId="A2">
+                                <Action DefId="A2" Enabled="false">
                                     <Expression/>
                                 </Action>
                             </ActionSet>
@@ -58,7 +58,7 @@
                                 <Param><![CDATA[{ "Albacete" }]]></Param>
                             </Expression>
                             <ActionSet>
-                                <Action DefId="A2">
+                                <Action DefId="A2" Enabled="false">
                                     <Expression/>
                                 </Action>
                             </ActionSet>
@@ -75,7 +75,7 @@
                                 <Param><![CDATA[{ "Alicante" }]]></Param>
                             </Expression>
                             <ActionSet>
-                                <Action DefId="A2">
+                                <Action DefId="A2" Enabled="false">
                                     <Expression/>
                                 </Action>
                             </ActionSet>
@@ -91,7 +91,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Almería" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -104,7 +108,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Ávila" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -117,7 +125,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Badajoz" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -130,7 +142,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Illes Balears" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -143,7 +159,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Barcelona" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -156,7 +176,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Burgos" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -169,7 +193,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Cáceres" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -182,7 +210,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Cádiz" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -195,7 +227,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Castellón" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -208,7 +244,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Ciudad Real" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -221,7 +261,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Córdoba" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -234,7 +278,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Coruña" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -247,7 +295,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Cuenca" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -260,7 +312,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Girona" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -273,7 +329,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Granada" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -286,7 +346,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Guadalajara" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -299,7 +363,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Gipuzkoa" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -312,7 +380,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Huelva" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -325,7 +397,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Huesca" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -338,7 +414,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Jaén" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -351,7 +431,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "León" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -364,7 +448,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Lleida" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -377,7 +465,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "La Rioja" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -390,7 +482,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Lugo" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -403,7 +499,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Madrid" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -416,7 +516,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Málaga" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -429,7 +533,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Murcia" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -442,7 +550,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Navarra" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -455,7 +567,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Ourense" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -468,7 +584,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Asturias" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -481,7 +601,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Palencia" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -494,7 +618,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Las Palmas" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -507,7 +635,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Pontevedra" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -520,7 +652,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Salamanca" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -533,7 +669,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "S.C. Tenerife" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -546,7 +686,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Cantabria" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -559,7 +703,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Segovia" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -572,7 +720,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Sevilla" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -585,7 +737,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Soria" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -598,7 +754,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Tarragona" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -611,7 +771,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Teruel" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -624,7 +788,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Toledo" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -637,7 +805,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Valencia" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -650,7 +822,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Valladolid" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -663,7 +839,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Bizkaia" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -676,7 +856,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Zamora" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -689,7 +873,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Zaragoza" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -702,7 +890,11 @@
                             <Expression>
                                 <Param><![CDATA[{ "Ceuta" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>
@@ -715,7 +907,28 @@
                             <Expression>
                                 <Param><![CDATA[{ "Melilla" }]]></Param>
                             </Expression>
-                            <ActionSet/>
+                            <ActionSet>
+                                <Action DefId="A2" Enabled="false">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["en otro caso"]]></Param>
+                    </Expression>
+                    <Partition DefId="C1">
+                        <Condition>
+                            <Expression>
+                                <Param><![CDATA[{ "en otro caso" }]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A2">
+                                    <Expression/>
+                                </Action>
+                            </ActionSet>
                         </Condition>
                     </Partition>
                 </Condition>

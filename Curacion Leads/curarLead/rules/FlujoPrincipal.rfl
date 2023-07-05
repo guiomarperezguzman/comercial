@@ -6,16 +6,9 @@
   <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
     <Body>
         <TaskList>
-            <StartTask Identifier="task_0"/>
-            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
-                <RuleList>
-                    <Package Name="Reglas.Validacion inicial"/>
-                    <Rule Uuid="1dc18e74-3ed6-461e-a051-a9ef597da60e"/>
-                    <Rule Uuid="a8bafcfb-3e0b-4140-8f80-6f2f20e6315a"/>
-                    <Rule Uuid="e89d1d60-0190-4df0-9937-193d4b2b027e"/>
-                    <Rule Uuid="f53e54a1-da9b-4275-a6e2-65b40d26f193"/>
-                </RuleList>
-            </RuleTask>
+            <StartTask Identifier="task_0">
+                <Actions Language="bal"><![CDATA[asignar a 'el país' Ninguno ;]]></Actions>
+            </StartTask>
             <StopTask Identifier="task_2"/>
             <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_4" Ordering="Default">
                 <RuleList>
@@ -28,23 +21,19 @@
                 <Select Dynamic="false" Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "España" ]]></Select>
                 <RuleList>
                     <Package Name="Reglas.España"/>
-                    <Package Name="Reglas.España.Teléfono"/>
-                    <Rule Uuid="3ba96bf0-51ca-414e-bf66-e3c93d7fa8bf"/>
-                    <Rule Uuid="dec7b817-8937-4d2a-8b68-9cebeecb4f00"/>
                 </RuleList>
             </RuleTask>
+            <SubflowTask Identifier="task_5" Uuid="b8784e7e-5147-4c3c-b3ad-81e8859ef365"/>
         </TaskList>
         <NodeList>
             <TaskNode Identifier="node_0" Task="task_0"/>
-            <TaskNode Identifier="node_1" Task="task_1"/>
             <TaskNode Identifier="node_2" Task="task_2"/>
             <BranchNode Identifier="node_4"/>
             <TaskNode Identifier="node_6" Task="task_4"/>
             <TaskNode Identifier="node_5" Task="task_3"/>
+            <TaskNode Identifier="node_7" Task="task_5"/>
         </NodeList>
         <TransitionList>
-            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
-            <Transition Identifier="transition_3" Source="node_1" Target="node_4"/>
             <Transition Identifier="transition_7" Source="node_4" Target="node_6">
                 <Conditions Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "Portugal" ]]></Conditions>
             </Transition>
@@ -54,6 +43,8 @@
                 <Conditions Language="bal"><![CDATA['los datos son válidos' y el País de 'el lead' es "España" ]]></Conditions>
             </Transition>
             <Transition Identifier="transition_5" Source="node_4" Target="node_2"/>
+            <Transition Identifier="transition_9" Source="node_0" Target="node_7"/>
+            <Transition Identifier="transition_10" Source="node_7" Target="node_4"/>
         </TransitionList>
     </Body>
     <Resources>
@@ -61,13 +52,13 @@
             <Data Name="node_6#name"><![CDATA[Portugal]]></Data>
             <Data Name="node_0#name"><![CDATA[Nodo inicial]]></Data>
             <Data Name="node_4#label"><![CDATA[Datos Validdos]]></Data>
+            <Data Name="node_7#label"><![CDATA[Validaciones iniciales]]></Data>
             <Data Name="node_5#name"><![CDATA[España]]></Data>
-            <Data Name="node_1#name"><![CDATA[Validacion inicial]]></Data>
             <Data Name="node_2#name"><![CDATA[Nodo final]]></Data>
             <Data Name="node_5#label"><![CDATA[España]]></Data>
             <Data Name="node_4#name"><![CDATA[Datos Validdos]]></Data>
-            <Data Name="node_1#label"><![CDATA[Validacion inicial]]></Data>
             <Data Name="node_6#label"><![CDATA[Portugal]]></Data>
+            <Data Name="node_7#name"><![CDATA[Validaciones iniciales]]></Data>
         </ResourceSet>
     </Resources>
 </Ruleflow>

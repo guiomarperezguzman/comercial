@@ -8,5 +8,5 @@
     el Teléfono de 'el lead' no empieza por "8" y el Teléfono de 'el lead' no empieza por "9"
 entonces
 	asignar a 'los datos son válidos' falso ;
-    agregar "El primer carácter de el teléfono no es correcto" en los Errores de 'el lead'; ]]></definition>
+    agregar "El primer carácter del teléfono no es correcto" en los Errores de 'el lead'; ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
