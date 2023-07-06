@@ -77,18 +77,6 @@ public class Lead
                 property update "true";
 }
 
-public class NewEnum
-        extends java.lang.Enum
-        property "ads.typeId" "4"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "newEnum"
-        property "de.generated" "true"
-{
-    domain {static newEnumValue}
-    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum newEnumValue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "newEnumValue";
-}
-
 public class Pais
         extends java.lang.Enum
         property "ads.typeId" "2"
@@ -109,16 +97,231 @@ public class Pais
 
 public class Provincia
         extends java.lang.Enum
-        property "ads.typeId" "3"
+        property "ads.typeId" "7"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "Provincia"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.es_ES" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.es_ES" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
         property "de.generated" "true"
+        property domainProviderResource "domains/Provioncias_España.xlsx"
 {
-    domain {static newEnumValue, static álava}
-    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia newEnumValue
+    domain 
+    {
+        static A,
+        static AB,
+        static AL,
+        static AV,
+        static B,
+        static BA,
+        static BI,
+        static BU,
+        static C,
+        static CA,
+        static CC,
+        static CE,
+        static CO,
+        static CR,
+        static CS,
+        static CU,
+        static GC,
+        static GI,
+        static GR,
+        static GU,
+        static H,
+        static HU,
+        static IB,
+        static J,
+        static L,
+        static LE,
+        static LO,
+        static LU,
+        static M,
+        static MA,
+        static ML,
+        static MU,
+        static NA,
+        static O,
+        static OU,
+        static P,
+        static PO,
+        static S,
+        static SA,
+        static SE,
+        static SG,
+        static SO,
+        static SS,
+        static T,
+        static TE,
+        static TF,
+        static TO,
+        static V,
+        static VA,
+        static VI,
+        static Z,
+        static ZA,
+        static ninguna
+    }
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia A
                 property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "newEnumValue";
-    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia álava
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Álava";
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia AB
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AB";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia AL
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AL";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia AV
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AV";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia B
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "B";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia BA
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia BI
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BI";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia BU
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia C
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CA
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CC
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CC";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CE
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CE";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CO
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CO";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CR
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CR";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CS
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CS";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia CU
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia GC
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GC";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia GI
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GI";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia GR
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GR";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia GU
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia H
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "H";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia HU
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia IB
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IB";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia J
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "J";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia L
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "L";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia LE
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LE";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia LO
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LO";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia LU
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia M
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "M";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia MA
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia ML
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ML";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia MU
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia NA
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia O
+                property "ads.attributeId" "35"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "O";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia OU
+                property "ads.attributeId" "36"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OU";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia P
+                property "ads.attributeId" "37"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "P";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia PO
+                property "ads.attributeId" "38"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PO";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia S
+                property "ads.attributeId" "39"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "S";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia SA
+                property "ads.attributeId" "40"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia SE
+                property "ads.attributeId" "41"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SE";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia SG
+                property "ads.attributeId" "42"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SG";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia SO
+                property "ads.attributeId" "43"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SO";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia SS
+                property "ads.attributeId" "44"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SS";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia T
+                property "ads.attributeId" "45"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "T";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia TE
+                property "ads.attributeId" "46"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TE";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia TF
+                property "ads.attributeId" "47"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TF";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia TO
+                property "ads.attributeId" "48"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TO";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia V
+                property "ads.attributeId" "49"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "V";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia VA
+                property "ads.attributeId" "50"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia VI
+                property "ads.attributeId" "51"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VI";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia Z
+                property "ads.attributeId" "52"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Z";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia ZA
+                property "ads.attributeId" "53"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZA";
+    public static final readonly guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia ninguna
+                property "ads.attributeId" "54"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Ninguna";
 }
 

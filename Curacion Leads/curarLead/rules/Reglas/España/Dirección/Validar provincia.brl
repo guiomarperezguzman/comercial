@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Validar provincia</name>
+  <uuid>d29fafdf-580b-471b-b9e8-f578b1976d75</uuid>
+  <locale>es_ES</locale>
+  <definition><![CDATA[si
+	'la provincia' es Ninguna 
+entonces
+	agregar "El código postal no corresponde con la provincia o la provincia es errónea" en los Errores de 'el lead';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

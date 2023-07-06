@@ -15,11 +15,16 @@
                         <Text><![CDATA[la Provincia de 'el lead' está en <unas cadenas de caracteres> ]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
+                <ConditionDefinition Id="C2">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[el Código Postal de 'el lead' empieza por <una cadena de caracteres> ]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[cambiar la Provincia de 'el lead' a <una cadena de caracteres> ]]></Text>
+                        <Text><![CDATA[asignar a 'la provincia' <una Provincia>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -30,625 +35,989 @@
                     <Expression>
                         <Param><![CDATA[{ "Araba","Álava" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Álava"]]></Param>
+                                <Param><![CDATA["01"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Álava]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Albacete" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Albacete"]]></Param>
+                                <Param><![CDATA["02"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Albacete]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Alacant","Alicante" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Alicante"]]></Param>
+                                <Param><![CDATA["03"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Alicante]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Almería" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Almería"]]></Param>
+                                <Param><![CDATA["04"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Almería]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Ávila" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Ávila"]]></Param>
+                                <Param><![CDATA["05"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Ávila]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Badajoz" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Badajoz"]]></Param>
+                                <Param><![CDATA["06"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Badajoz]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Illes Balears","Balears (Illes)" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Balears (Illes)"]]></Param>
+                                <Param><![CDATA["07"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Balears (Illes)]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Barcelona" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Barcelona"]]></Param>
+                                <Param><![CDATA["08"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Barcelona]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Burgos" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Burgos"]]></Param>
+                                <Param><![CDATA["09"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Burgos]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Cáceres" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Cáceres"]]></Param>
+                                <Param><![CDATA["10"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Cáceres]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Cádiz" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Cádiz"]]></Param>
+                                <Param><![CDATA["11"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Cádiz]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Castelló","Castellón" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Castellón"]]></Param>
+                                <Param><![CDATA["12"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Castellón]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Ciudad Real" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Ciudad Real"]]></Param>
+                                <Param><![CDATA["13"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Ciudad Real]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Córdoba" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Córdoba"]]></Param>
+                                <Param><![CDATA["14"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Córdoba]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "A Coruña","Coruña (A)" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Coruña (A)"]]></Param>
+                                <Param><![CDATA["15"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Coruña (A)]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Cuenca" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Cuenca"]]></Param>
+                                <Param><![CDATA["16"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Cuenca]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Girona" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Girona"]]></Param>
+                                <Param><![CDATA["17"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Girona]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Granada" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Granada"]]></Param>
+                                <Param><![CDATA["18"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Granada]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Guadalajara" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Guadalajara"]]></Param>
+                                <Param><![CDATA["19"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Guadalajara]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Gipuzkoa" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Gipuzkoa"]]></Param>
+                                <Param><![CDATA["20"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Gipuzkoa]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Huelva" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Huelva"]]></Param>
+                                <Param><![CDATA["21"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Huelva]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Huesca" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Huesca"]]></Param>
+                                <Param><![CDATA["22"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Huesca]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Jaén" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Jaén"]]></Param>
+                                <Param><![CDATA["23"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Jaén]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "León" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["León"]]></Param>
+                                <Param><![CDATA["24"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[León]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Lleida" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Lleida"]]></Param>
+                                <Param><![CDATA["25"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Lleida]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "La Rioja","Rioja (La)" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Rioja (La)"]]></Param>
+                                <Param><![CDATA["26"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Rioja (La)]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Lugo" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Lugo"]]></Param>
+                                <Param><![CDATA["27"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Lugo]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Madrid" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Madrid"]]></Param>
+                                <Param><![CDATA["28"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Madrid]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Málaga" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Málaga"]]></Param>
+                                <Param><![CDATA["29"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Málaga]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Murcia" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Murcia"]]></Param>
+                                <Param><![CDATA["30"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Murcia]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Navarra" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Navarra"]]></Param>
+                                <Param><![CDATA["31"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Navarra]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Ourense" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Ourense"]]></Param>
+                                <Param><![CDATA["32"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Ourense]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Asturias" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Asturias"]]></Param>
+                                <Param><![CDATA["33"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Asturias]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Palencia" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Palencia"]]></Param>
+                                <Param><![CDATA["34"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Palencia]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Las Palmas","Palmas (Las)" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Palmas (Las)"]]></Param>
+                                <Param><![CDATA["35"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Palmas (Las)]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Pontevedra" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Pontevedra"]]></Param>
+                                <Param><![CDATA["36"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Pontevedra]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Salamanca" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Salamanca"]]></Param>
+                                <Param><![CDATA["37"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Salamanca]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Santa Cruz de Tenerife" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Santa Cruz de Tenerife"]]></Param>
+                                <Param><![CDATA["38"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Santa Cruz de Tenerife]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Cantabria" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Cantabria"]]></Param>
+                                <Param><![CDATA["39"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Alicante]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Segovia" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Segovia"]]></Param>
+                                <Param><![CDATA["40"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Segovia]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Sevilla" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Sevilla"]]></Param>
+                                <Param><![CDATA["41"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Sevilla]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Soria" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Soria"]]></Param>
+                                <Param><![CDATA["42"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Soria]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Tarragona" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Tarragona"]]></Param>
+                                <Param><![CDATA["43"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Tarragona]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Teruel" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Teruel"]]></Param>
+                                <Param><![CDATA["44"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Teruel]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Toledo" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Toledo"]]></Param>
+                                <Param><![CDATA["45"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Toledo]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "València","Valencia" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Valencia"]]></Param>
+                                <Param><![CDATA["46"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Valencia]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Valladolid" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Valladolid"]]></Param>
+                                <Param><![CDATA["47"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Valladolid]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Bizkaia" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Bizkaia"]]></Param>
+                                <Param><![CDATA["48"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Bizkaia]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Zamora" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Zamora"]]></Param>
+                                <Param><![CDATA["49"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Zamora]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Zaragoza" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Zaragoza"]]></Param>
+                                <Param><![CDATA["50"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Zaragoza]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Ceuta" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Ceuta"]]></Param>
+                                <Param><![CDATA["51"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Albacete]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
                 <Condition>
                     <Expression>
                         <Param><![CDATA[{ "Melilla" }]]></Param>
                     </Expression>
-                    <ActionSet>
-                        <Action DefId="A0">
+                    <Partition DefId="C2">
+                        <Condition>
                             <Expression>
-                                <Param><![CDATA["Melilla"]]></Param>
+                                <Param><![CDATA["52"]]></Param>
                             </Expression>
-                        </Action>
-                    </ActionSet>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[Melilla]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
                 </Condition>
             </Partition>
         </Contents>
@@ -656,6 +1025,8 @@
     <Resources DefaultLocale="es_ES">
         <ResourceSet Locale="es_ES">
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Lista Provincias]]></Data>
+            <Data Name="Definitions(C2)#HeaderText"><![CDATA[CP empieza por ...]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[una cadena de caracteres]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Provincia]]></Data>
         </ResourceSet>
     </Resources>

@@ -5,4 +5,5 @@
   <variables name="Lead" type="guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead" initialValue="" verbalization="el lead" jsonName=""/>
   <variables name="datosValidos" type="java.lang.Boolean" initialValue="true" verbalization="los datos son válidos" jsonName=""/>
   <variables name="Pais" type="guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais" initialValue="" verbalization="el país" jsonName=""/>
+  <variables name="Provincia" type="guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia" initialValue="" verbalization="la provincia" jsonName=""/>
 </ilog.rules.studio.model.base:VariableSet>

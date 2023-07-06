@@ -33,10 +33,6 @@ guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.teléfono#phrase.na
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.action = cambiar el Tratamiento {this,PARTITIVE_ARTICLE} a {Tratamiento}
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Lead.tratamiento#phrase.navigation = {Tratamiento} {this,PARTITIVE_ARTICLE}
 
-# guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum
-guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum#concept.label = new enum
-guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.NewEnum.newEnumValue#instance.label = new enum value
-
 # guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais#concept.documentation = 
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais#concept.label = Pais
@@ -47,5 +43,57 @@ guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Pais.portugal#instance.l
 # guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia#concept.documentation = 
 guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia#concept.label = Provincia
-guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.newEnumValue#instance.label = new enum value
-guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.álava#instance.label = Álava
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.A#instance.label = Alicante
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.AB#instance.label = Albacete
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.AL#instance.label = Almería
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.AV#instance.label = Ávila
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.B#instance.label = Barcelona
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.BA#instance.label = Badajoz
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.BI#instance.label = Bizkaia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.BU#instance.label = Burgos
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.C#instance.label = Coruña (A)
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CA#instance.label = Cádiz
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CC#instance.label = Cáceres
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CE#instance.label = Ceuta
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CO#instance.label = Córdoba
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CR#instance.label = Ciudad Real
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CS#instance.label = Castellón
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.CU#instance.label = Cuenca
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.GC#instance.label = Palmas (Las)
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.GI#instance.label = Girona
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.GR#instance.label = Granada
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.GU#instance.label = Guadalajara
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.H#instance.label = Huesca
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.HU#instance.label = Huelva
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.IB#instance.label = Balears (Illes)
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.J#instance.label = Jaén
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.L#instance.label = Lleida
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.LE#instance.label = León
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.LO#instance.label = Rioja (La)
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.LU#instance.label = Lugo
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.M#instance.label = Madrid
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.MA#instance.label = Málaga
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.ML#instance.label = Melilla
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.MU#instance.label = Murcia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.NA#instance.label = Navarra
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.O#instance.label = Asturias
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.OU#instance.label = Ourense
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.P#instance.label = Palencia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.PO#instance.label = Pontevedra
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.S#instance.label = Cantabria
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.SA#instance.label = Salamanca
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.SE#instance.label = Sevilla
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.SG#instance.label = Segovia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.SO#instance.label = Soria
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.SS#instance.label = Gipuzkoa
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.T#instance.label = Tarragona
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.TE#instance.label = Teruel
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.TF#instance.label = Santa Cruz de Tenerife
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.TO#instance.label = Toledo
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.V#instance.label = Valencia
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.VA#instance.label = Valladolid
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.VI#instance.label = Álava
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.Z#instance.label = Zaragoza
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.ZA#instance.label = Zamora
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.ninguna#instance.documentation = Valor especial para indicar que no hay provincia seleccionada o es errónea
+guiomar.perez_ibm.com.gpg_comercial.curacion_leads.lead.Provincia.ninguna#instance.label = Ninguna
